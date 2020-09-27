@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShapeableImageViewActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="正常图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test" />
+
+            <!--圆角图片-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="圆角图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/roundedImageStyle" />
+
+            <!--圆形图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="圆形图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/circleImageStyle" />
+
+            <!--切角图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="切角图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/cutImageStyle" />
+
+            <!--菱形图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="菱形图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/diamondImageStyle" />
+
+            <!--单圆角图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="单圆角图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/singleRoundedImageStyle" />
+
+            <!--子弹图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="子弹图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/bulletImageStyle" />
+
+            <!--双弧度图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="双弧度图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/doubleArcStyle" />
+
+            <!--标签图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="标签图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/TipImageStyle" />
+
+            <!--边框图片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="1"
+                android:text="头像图片"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="2dp"
+                android:src="@mipmap/test"
+                app:shapeAppearanceOverlay="@style/circleImageStyle"
+                app:strokeColor="#000"
+                app:strokeWidth="4dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!--目标图片-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@mipmap/test"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circleImageStyle" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="networkImg"
+            android:text="显示网络图片" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
