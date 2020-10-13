@@ -19,8 +19,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * 点击事件
+     * @param view
+     */
     public void onClick(View view) {
-        //ShapeableImageViewActivity 使用
-        startActivity(new Intent(MainActivity.this, ShapeableImageViewActivity.class));
+        switch (view.getId()) {
+            case R.id.btn_shapeableImageView:
+                //ShapeableImageView 使用
+                goToActivity(ShapeableImageViewActivity.class);
+                break;
+            case R.id.btn_materialButton:
+                //MaterialButton 使用
+                goToActivity(MaterialButtonActivity.class);
+                break;
+            default:
+                break;
+        }
+
     }
+
+    /**
+     * 跳转Activity
+     * @param clazz 目标Activity
+     */
+    private void goToActivity(Class<?> clazz) {
+        startActivity(new Intent(MainActivity.this, clazz));
+    }
+
+
 }

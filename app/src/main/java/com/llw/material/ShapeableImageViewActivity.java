@@ -6,6 +6,7 @@ import android.graphics.Matrix;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -40,4 +41,5 @@ public class ShapeableImageViewActivity extends AppCompatActivity {
         String imgUrl = "http://img5.adesk.com/5f59ab8de7bce77595e55145?imageMogr2/thumbnail/!720x1280r/gravity/Center/crop/720x1280";
         Glide.with(this).load(imgUrl).into(logo);
     }
+
 }

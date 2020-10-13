@@ -66,6 +66,15 @@
         <item name="cornerSizeBottomLeft">24dp</item>
     </style>
 
+    <!--Material样式-->
+    <style name="MaterialStyle" parent="Theme.MaterialComponents.Light.DarkActionBar"/>
 
+    <!--双圆角按钮样式-->
+    <style name="DoubleFilletButtonStyle">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+    </style>
 
 </resources>

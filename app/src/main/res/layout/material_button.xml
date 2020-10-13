@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MaterialButtonActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test" />
+            <!--圆角按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="圆角按钮"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:cornerRadius="25dp" />
+            <!--双圆角按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="双圆角按钮"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:shapeAppearanceOverlay="@style/DoubleFilletButtonStyle" />
+            <!--边框按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="边框按钮"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+            <!--边框按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="边框按钮"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp" />
+            <!--圆形按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="圆形按钮"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="60dp"
+                app:strokeColor="@color/colorPrimaryDark"
+                app:strokeWidth="4dp" />
+            <!--图标按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="图标按钮"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorAccent"
+                app:icon="@mipmap/baseline_alarm_white_18dp"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/black"
+                app:iconTintMode="src_in" />
+
+            <!--圆角图标按钮-->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="圆角图标按钮"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/black"
+                app:cornerRadius="25dp"
+                app:icon="@mipmap/baseline_alarm_white_18dp"
+                app:iconGravity="textStart"
+                app:rippleColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

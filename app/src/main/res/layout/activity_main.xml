@@ -8,10 +8,18 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btn_shapeableImageView"
         android:text="ShapeableImageView"
         android:textAllCaps="false"
         android:onClick="onClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/btn_materialButton"
+        android:text="MaterialButton"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
